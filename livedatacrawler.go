@@ -175,7 +175,7 @@ func updateLastMinStateFromWebsocket(symArr []string, counter *Counter, symDataL
 			}
 			symDataLookup[sym].LastMinState.LastDayVol = d.DayVolume
 			if debug {
-				println(t1.Unix(), sym, fmt.Sprintf("%f", px))
+				println(sym, "Price:", fmt.Sprintf("%f", px), "Unix time:", t1.Unix())
 			}
 			(*counter).Mux.Lock()
 			(*counter).Count++
