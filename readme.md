@@ -2,7 +2,7 @@
 This crawler listens to Yahoo Finance websocket to retrieve realtime data with a partially decoded protobuf structure.
 
 # 1.1. Design
-The design leverages on goroutines for parallelized operations so as to be able to handle realtime data for high number of indices(>1k) with internal latency.
+The design leverages on goroutines for parallelized operations so as to be able to handle realtime data for high number of indices(>1k) with low internal latency.
 
 ![alt text](https://raw.githubusercontent.com/PhantomV1989/yfin_live_crawler/master/design.png)
 
